@@ -1,0 +1,30 @@
+@import "../../styles/variable.scss";
+
+.home {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; //4 колонки по 1fr 
+    grid-auto-rows: minmax(180px, auto);
+
+    .box {
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid $soft-bg;
+        background-color: rgba(173, 216, 230, 0.534);
+    }
+
+    .box1 {
+        grid-column: span 1; //ширина колонки 1 span
+        grid-row: span 3; //высота колонки 3 span
+    }
+
+    .box4 {
+        grid-column: span 1; //ширина колонки 1 span
+        grid-row: span 3; //высота колонки 3 span
+    }
+
+    .box7 {
+        grid-column: span 2; //ширина колонки 2 span
+        grid-row: span 2; //высота колонки 2 span
+    }
+}
